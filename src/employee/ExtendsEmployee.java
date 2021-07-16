@@ -43,5 +43,23 @@ public class ExtendsEmployee extends Employee {
 		logger.log(Level.INFO,"total wages for month - "+totalWageForMonth+" RS");		
 	}
 	
+	//calculating Wages For Working Hour And Days
+	public void WagesForWorkingHourAndDays(){
+		
+		totalWagesForDays = 0;
+		hourPerDay=totalMonthWorkingHour/workingDays;
+		WagesForDay=hourPerDay*wagePerHour;
+		
+		for(int i=0;i<20;i++) {
+			totalWagesForDays=totalWagesForDays+WagesForDay;
+		}
+		
+		logger.log(Level.INFO,"----------------------------------------------------\n");		
+		logger.log(Level.INFO,"total consume money for 100 hours or 20 days is - "+totalWagesForDays+" RS");		
+		logger.log(Level.INFO,"----------------------------------------------------\n");
+
+		
+	}
+	
 
 }

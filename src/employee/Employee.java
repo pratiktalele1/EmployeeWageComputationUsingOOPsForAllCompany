@@ -14,7 +14,11 @@ public class Employee {
 	protected double partTimeEmployeeWage;
 	protected double totalWageForMonth;
 	protected double workingDays=20;
-
+	protected double totalWagesForDays=0;
+	protected double hourPerDay;
+	protected double WagesForDay;
+	protected double totalMonthWorkingHour=100;
+	
 	public static final Logger logger=Logger.getLogger("employee");
 
 	//generating random number
