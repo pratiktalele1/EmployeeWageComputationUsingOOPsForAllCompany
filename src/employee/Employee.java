@@ -18,7 +18,7 @@ public class Employee {
 	protected double hourPerDay;
 	protected double WagesForDay;
 	protected double totalMonthWorkingHour=100;
-	protected double employeeWageBuilder=0;
+	protected int employeeWageBuilder=0;
 	protected String nameOfCompany;
 	
 	public static final Logger logger=Logger.getLogger("employee");

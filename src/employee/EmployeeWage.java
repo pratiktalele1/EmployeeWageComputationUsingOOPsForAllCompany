@@ -39,8 +39,17 @@ public class EmployeeWage {
 		
 		//storing company wage and name
 		ExtendsEmployee tata=new ExtendsEmployee();
-		airtel.WagesForWorkingHourAndDays("tata", 745, 452, 7854);
-		System.out.println(airtel.nameOfCompany+" :: "+airtel.employeeWageBuilder);
+		tata.WagesForWorkingHourAndDays("tata", 745, 452, 7854);
+		System.out.println(tata.nameOfCompany+" :: "+tata.employeeWageBuilder);
+		
+		
+		//getting all company wages
+		tata.getAll();
+
+		
+		
+		
+	
 
 	}
 }
