@@ -32,7 +32,15 @@ public class EmployeeWage {
 		employeeData.WagesForWorkingHourAndDays("idea",250,100,120);
 		employeeData.WagesForWorkingHourAndDays("bsnl",207,100,120);
 		
+		//storing company wage and name
+		ExtendsEmployee airtel=new ExtendsEmployee();
+		airtel.WagesForWorkingHourAndDays("airtel", 78, 452, 7854);
+		System.out.println(airtel.nameOfCompany+" :: "+airtel.employeeWageBuilder);
 		
+		//storing company wage and name
+		ExtendsEmployee tata=new ExtendsEmployee();
+		airtel.WagesForWorkingHourAndDays("tata", 745, 452, 7854);
+		System.out.println(airtel.nameOfCompany+" :: "+airtel.employeeWageBuilder);
 
 	}
 }

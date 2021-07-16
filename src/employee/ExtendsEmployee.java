@@ -58,6 +58,8 @@ public class ExtendsEmployee extends Employee {
 		logger.log(Level.INFO,company+" employee consume money for "+totalMonthWorkingHour+" hours or "+workingDays+" days is - "+totalWagesForDays+" RS");		
 		logger.log(Level.INFO,"----------------------------------------------------\n");
 
+		this.employeeWageBuilder=totalWagesForDays;
+		this.nameOfCompany=company;
 		
 	}
 	
