@@ -7,4 +7,5 @@ interface EmpWageBuilderIF {
 	public static ArrayList<Integer> getEmp = new ArrayList<Integer>();
 
 	public void showFromInterface();
+	public void totalWageOfCompany();
 }

@@ -78,6 +78,11 @@ public class ExtendsEmployee extends Employee {
 		storeWage.showFromInterface();
 	}
 	
+	//total wage for company
+	public void totalWage() {
+		storeWage.totalWageOfCompany();
+	}
+	
 	
 	//getting Daily And Total Wage hash map
 	protected int DailyAndTotalWage(int wagePerHour,int fullDayHour,int workingDays) {

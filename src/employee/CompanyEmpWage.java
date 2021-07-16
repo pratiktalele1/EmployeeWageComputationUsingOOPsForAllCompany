@@ -2,14 +2,16 @@ package employee;
 
 public class CompanyEmpWage implements EmpWageBuilderIF {
 	public static int i = 0;
+	public static int totalWage = 0;
 	public static int[] wage = new int[10];
+	
 
 	public CompanyEmpWage(int employeeWageBuilder) {
+		totalWage=employeeWageBuilder;
 		wage[i] = employeeWageBuilder;
 		companiesWages[i] = employeeWageBuilder;
 		i++;
 		getEmp.add(employeeWageBuilder);
-
 	}
 
 	// getting all company wage
@@ -39,6 +41,11 @@ public class CompanyEmpWage implements EmpWageBuilderIF {
 		for (int j = 0; j < getEmp.size(); j++) {
 			System.out.println(getEmp.get(j));
 		}
+	}
+	
+	
+	public void totalWageOfCompany() {
+		System.out.println(totalWage);
 	}
 
 }
