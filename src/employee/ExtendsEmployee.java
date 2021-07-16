@@ -37,5 +37,11 @@ public class ExtendsEmployee extends Employee {
 
 	}
 	
+	//calculating monthly employee wage
+	protected void WagesForMonth() {		
+		totalWageForMonth=workingDays*dailyWage;
+		logger.log(Level.INFO,"total wages for month - "+totalWageForMonth+" RS");		
+	}
+	
 
 }

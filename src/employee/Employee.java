@@ -12,6 +12,8 @@ public class Employee {
 	protected int partTimeHour=8;
 	protected double dailyWage;
 	protected double partTimeEmployeeWage;
+	protected double totalWageForMonth;
+	protected double workingDays=20;
 
 	public static final Logger logger=Logger.getLogger("employee");
 
@@ -29,26 +31,23 @@ public class Employee {
 		
 		Scanner getValue = new Scanner(System.in);
 		int selectOption = getValue.nextInt();
-		
+		System.out.println("-----------------------------------------------------");
+
 		switch (selectOption) {
 		case 1: {
-			System.out.println("-----------------------------------------------------");
 			dailyWage=wagePerHour*fullDayHour;
 			logger.log(Level.INFO," employee Daily wage "+ dailyWage +" RS");
-			System.out.println("-----------------------------------------------------");
 			break;
 		}
 		case 2: {
-			System.out.println("-----------------------------------------------------");
-
 			partTimeEmployeeWage=wagePerHour*partTimeHour;
 			logger.log(Level.INFO,"Part time employee wage "+ partTimeEmployeeWage +" RS");
-			System.out.println("-----------------------------------------------------");
 			break;
 		}
 		default:
 			System.out.println("wrong option");
 		}
+		System.out.println("-----------------------------------------------------");
 	}
 	
 	

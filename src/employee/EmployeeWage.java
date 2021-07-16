@@ -21,5 +21,9 @@ public class EmployeeWage {
 		
 		//getting employee wage using switch
 		employeeData.employeeWageUsingSwitch();
+		
+		
+		//getting wages for month;
+		employeeData.WagesForMonth();
 	}
 }
