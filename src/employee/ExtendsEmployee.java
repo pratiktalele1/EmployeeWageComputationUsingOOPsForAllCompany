@@ -22,4 +22,11 @@ public class ExtendsEmployee extends Employee {
 		logger.log(Level.INFO,"daily employee wage is :-"+dailyWage+" /- Rs");
 		return dailyWage;
 	}
+	
+	//calculating daily wage of part time employee
+	protected void partTimeEmployeeWage() {
+		double partTimeEmployeeWage=wagePerHour*partTimeHour;
+		logger.log(Level.INFO,"Part time employee wage :-"+partTimeEmployeeWage+" /- Rs");
+
+	}
 }

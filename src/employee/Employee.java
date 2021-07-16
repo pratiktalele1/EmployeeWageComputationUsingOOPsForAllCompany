@@ -5,6 +5,7 @@ public class Employee {
 	protected int randomNumber;
 	protected int wagePerHour=20;
 	protected int fullDayHour=8;
+	protected int partTimeHour=8;
 	
 	//generating random number
 	protected void getRandomNumber() {
