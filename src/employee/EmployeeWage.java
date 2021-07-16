@@ -27,6 +27,12 @@ public class EmployeeWage {
 		employeeData.WagesForMonth();
 		
 		//getting Wages For Working Hour And Days
-		employeeData.WagesForWorkingHourAndDays();
+		employeeData.WagesForWorkingHourAndDays("airtel",30,100,120);
+		employeeData.WagesForWorkingHourAndDays("vodafone",302,100,120);
+		employeeData.WagesForWorkingHourAndDays("idea",250,100,120);
+		employeeData.WagesForWorkingHourAndDays("bsnl",207,100,120);
+		
+		
+
 	}
 }
