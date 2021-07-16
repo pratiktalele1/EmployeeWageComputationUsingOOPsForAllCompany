@@ -19,5 +19,7 @@ public class EmployeeWage {
 		//getting part time employee wage
 		employeeData.partTimeEmployeeWage();
 		
+		//getting employee wage using switch
+		employeeData.employeeWageUsingSwitch();
 	}
 }
