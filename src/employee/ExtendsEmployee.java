@@ -1,10 +1,15 @@
 package employee;
 
+import java.nio.channels.FileChannel.MapMode;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ExtendsEmployee extends Employee {
 
+	public Map<Integer,Integer> wageMap=new HashMap<Integer,Integer>();
+	
 	public static final Logger logger = Logger.getLogger("employeeWage");
 
 	// check employee attendance
@@ -72,5 +77,27 @@ public class ExtendsEmployee extends Employee {
 		// storeWage.show();
 		storeWage.showFromInterface();
 	}
+	
+	
+	//getting Daily And Total Wage hash map
+	protected int DailyAndTotalWage(int wagePerHour,int fullDayHour,int workingDays) {
+		System.out.println("---------------------------------------");
+		this.wagePerHour=wagePerHour;
+		this.fullDayHour=fullDayHour;
+		this.workingDays=this.workingDays;
+		
+		dailyWage = this.wagePerHour * this.fullDayHour;
+		totalWageForMonth = this.workingDays * dailyWage;
+		wageMap.put((int) dailyWage, (int) totalWageForMonth);
+		return (int)dailyWage;
+	}
+	
+	//desplaying daily wage with monthly wage
+	public void getValue(int getValue) {
+		System.out.println("daily wage is "+getValue+" monthly wage is "+wageMap.get(getValue));
+	}
+	
+
+	
 
 }

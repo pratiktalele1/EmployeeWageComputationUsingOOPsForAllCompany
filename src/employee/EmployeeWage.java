@@ -44,5 +44,8 @@ public class EmployeeWage {
 		// getting all company wages
 		tata.getAll();
 
+		// getting and storing wage per day and total wage
+		tata.getValue(tata.DailyAndTotalWage(15, 9, 15));
+
 	}
 }

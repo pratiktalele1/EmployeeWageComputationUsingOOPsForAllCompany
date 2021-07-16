@@ -25,7 +25,7 @@ public class CompanyEmpWage implements EmpWageBuilderIF {
 
 	@Override
 	public void showFromInterface() {
-		//getting value from interface wages
+		// getting value from interface wages
 		System.out.println("total wages of company from interface");
 		for (int k : companiesWages) {
 			if (k != 0) {
@@ -33,10 +33,10 @@ public class CompanyEmpWage implements EmpWageBuilderIF {
 			}
 
 		}
-		
-		//getting value from array list
+
+		// getting value from array list
 		System.out.println("getting value from array list");
-		for(int j=0;j<getEmp.size();j++) {
+		for (int j = 0; j < getEmp.size(); j++) {
 			System.out.println(getEmp.get(j));
 		}
 	}
