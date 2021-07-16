@@ -15,4 +15,11 @@ public class ExtendsEmployee extends Employee {
 			logger.log(Level.INFO,"Employee absent");
 		}
 	}
+	
+	//calculating daily wage of employee
+	protected double DailyEmployeeWage() {
+		double dailyWage=wagePerHour*fullDayHour;
+		logger.log(Level.INFO,"daily employee wage is :-"+dailyWage+" /- Rs");
+		return dailyWage;
+	}
 }
