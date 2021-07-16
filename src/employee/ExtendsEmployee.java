@@ -6,8 +6,7 @@ import java.util.logging.Logger;
 public class ExtendsEmployee extends Employee {
 
 	public static final Logger logger = Logger.getLogger("employeeWage");
-	private CompanyEmpWage storeWage;
-	
+
 	// check employee attendance
 	protected void EmployeeAttendance() {
 		System.out.println("---------------------------------------");
@@ -63,19 +62,15 @@ public class ExtendsEmployee extends Employee {
 
 		this.employeeWageBuilder = (int) totalWagesForDays;
 		this.nameOfCompany = company;
-		
-		storeWage=new CompanyEmpWage(employeeWageBuilder);
+
+		storeWage = new CompanyEmpWage(employeeWageBuilder);
 	}
-	
-	
-	
-	
+
+	private CompanyEmpWage storeWage;
+
 	public void getAll() {
-		storeWage.show();
+		// storeWage.show();
+		storeWage.showFromInterface();
 	}
-	
-	
-	
-	
 
 }
