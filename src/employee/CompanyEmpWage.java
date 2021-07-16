@@ -8,6 +8,7 @@ public class CompanyEmpWage implements EmpWageBuilderIF {
 		wage[i] = employeeWageBuilder;
 		companiesWages[i] = employeeWageBuilder;
 		i++;
+		getEmp.add(employeeWageBuilder);
 
 	}
 
@@ -24,12 +25,19 @@ public class CompanyEmpWage implements EmpWageBuilderIF {
 
 	@Override
 	public void showFromInterface() {
+		//getting value from interface wages
 		System.out.println("total wages of company from interface");
 		for (int k : companiesWages) {
 			if (k != 0) {
 				System.out.println(k);
 			}
 
+		}
+		
+		//getting value from array list
+		System.out.println("getting value from array list");
+		for(int j=0;j<getEmp.size();j++) {
+			System.out.println(getEmp.get(j));
 		}
 	}
 
